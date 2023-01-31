@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
-app.use('/.well_known', express.static(path.join(__dirname, '.well_known')));
+app.use('/.well-known', express.static(path.join(__dirname, '.well_known')));
 
 app.get('/logo', (req, res) => {
     res.sendFile(path.join(__dirname, 'assets', 'logo.png'));
