@@ -68,8 +68,8 @@ cron.schedule('*/15 * * * *', () => {
     });
 });
 
-const authToken = "Bearer " + process.env.AUTH_TOKEN;
-const alexisHRBaseUrl = process.env.ALEXIS_HR_BASE_URL;
+const authToken = "Bearer " + "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcHAuYWxleGlzaHIuY29tIl0sImNsaWVudElkIjoiNWFjYmQyMTIwMTUwYWYwMDFlNDIwYjg4Iiwic3ViIjoiNjMyOTY2ZDcyOGFhZjkwMDE5NWE2ZTY2OjYzMTVhNjBlM2ExYzEyMDAxOTQwYjg5NSIsImp0aSI6IjE2NzUzMjY2ODExNzMtZmNPd3RDVmZRQU5KWHNRQThuS1ZlbVdzIiwidWlkIjoiNjMyOTY2ZDcyOGFhZjkwMDE5NWE2ZTY2IiwiY29tcGFueUlkIjoiNjMxNWE2MGUzYTFjMTIwMDE5NDBiODk1IiwibWVtYmVyc2hpcHMiOlt7ImlkIjoiNjMyOTY2ZDgyOGFhZjkwMDE5NWE2ZTdmIiwiY29tcGFueUlkIjoiNjMxNWE2MGUzYTFjMTIwMDE5NDBiODk1IiwiZW1wbG95ZWVJZCI6IjYzMjk2NmQ4MjhhYWY5MDAxOTVhNmU4YyIsInJvbGUiOiJtZW1iZXIiLCJhY3RpdmUiOnRydWV9XSwic2NvcGUiOiJvcGVuaWQiLCJpYXQiOjE2NzUzMjY2ODEsImV4cCI6MTY3NTMyODQ4MSwiaXNzIjoiaHR0cHM6Ly9pZC5hbGV4aXNoci5jb20ifQ.EWlFrkr3mDBLpmxTtg-2osrYi1o0tvZ6bKw6LZviiMHZ1NAZGYHC1CfuHIlTnKTTROVDUbUIqeKB6z0zTNrPzz6Bo3ZEla7AWTGvRsXoeBlbYk3kxd1Altr8RRIzGUyIB_NR0zgDRGlzmzu_f8xkGYSwPAZDWVBI5aG9G05VinBFQ6ADubMI49uDX3-IlR-wqky_KQExk7n9r1cjgX5kklkf1yhqQpck4eMWK-eONUyVAQKb_XV8U0IPDxhacUFEwM7R0ZVWgzWV0xsexNfaDCubwVsIll2KpyQpOkCa-9j2nbatG-BY_6t5_qWcCHdBOCc0Xynkt3sAkYZZoXMk931x63nzXgOzMHDSbhQaytAsbBFcARo-aEz-jRYdfDBk0CWXlrIxwTrvsotakb3D14A_MZnER1RGaYJhDx0pNVaGHkNhSjA-AZV6oyIcNblMCsvF7_O15cnOBirSQzJa_NKHDn9zTmZ9dpTaGmEh-3qkhQHN9VWsg-qVNfsLtqGA3ricBKNUAbrWPgEpN1tNfZa60izWV4B7aS9gklrTc75SJCJtkmfd5aFaQTnvQmBgrkdruEWA03lWcY5_FaFy_nbo7nZJbHqmiv-PTwJYwYI8n3Gapt2b8yel6MaPSBCtWc9xLSkz0m-9WESZqDpNtRxcIOMiSWbSH16oSU4mUXc";
+const alexisHRBaseUrl = api.alexisHRBaseUrl;
 
 /**
  * Get list of users
@@ -77,9 +77,9 @@ const alexisHRBaseUrl = process.env.ALEXIS_HR_BASE_URL;
  */
 function getUsersList(callback) {
     const options = {
-        url: alexisHRBaseUrl + "users",
+        url: "https://api.alexishr.com/v1/" + "users",
         headers: {
-            "Authorization": authToken
+            "Authorization": "authToken"
         }
     };
 
