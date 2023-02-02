@@ -69,7 +69,7 @@ cron.schedule('*/15 * * * *', () => {
 });
 
 const authToken = "Bearer " + process.env.AUTH_TOKEN;
-const alexisHRBaseUrl = api.alexisHRBaseUrl;
+const alexisHRBaseUrl = process.env.ALEXIS_HR_BASE_URL;
 
 /**
  * Get list of users
