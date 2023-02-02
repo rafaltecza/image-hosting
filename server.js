@@ -34,6 +34,15 @@ app.listen(port, () => {
  * Cron job
  * Runs every 15 minutes
  **/
+getUsersList((err, users) => {
+    if (err) {
+        console.error(err);
+    } else {
+        console.log(users);
+    }
+});
+
+
 console.log(1);
 cron.schedule('*/15 * * * *', () => {
     console.log(2);
