@@ -88,6 +88,7 @@ function getUsersList(callback) {
             console.error(error);
         }
         const users = JSON.parse(body).users;
+        console.log(JSON.parse(body));
         console.log(`Received list of ${users.length} users.`);
         callback(null, users);
     }), {
