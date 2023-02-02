@@ -77,9 +77,9 @@ const alexisHRBaseUrl = api.alexisHRBaseUrl;
  */
 function getUsersList(callback) {
     const options = {
-        url: "https://api.alexishr.com/v1/" + "users",
+        url: "https://api.alexishr.com/v1/" + "employee",
         headers: {
-            "Authorization": "authToken"
+            "Authorization": authToken
         }
     };
 
