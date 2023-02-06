@@ -29,44 +29,44 @@ app.get('/logo', (req, res) => {
 app.listen(port, () => {
     console.log(`Serwer uruchomiony na porcie ${port}`);
 });
-
-/**
- * Cron job
- * Runs every 15 minutes
- **/
-getUsersList((err, users) => {
-    if (err) {
-        console.error(err);
-    } else {
-        console.log(users);
-    }
-});
-
-
-console.log(1);
-cron.schedule('*/15 * * * *', () => {
-    console.log(2);
-
-    getUsersList((err, users) => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log(3);
-
-            users.forEach(user => {
-                getUserDetails(user.id, (err, userDetails) => {
-                    if (err) {
-                        console.error(err);
-                    } else {
-                        generateImage(userDetails)
-                            .then(message => console.log(message))
-                            .catch(err => console.error(err));
-                    }
-                });
-            });
-        }
-    });
-});
+//
+// /**
+//  * Cron job
+//  * Runs every 15 minutes
+//  **/
+// getUsersList((err, users) => {
+//     if (err) {
+//         console.error(err);
+//     } else {
+//         console.log(users);
+//     }
+// });
+//
+//
+// console.log(1);
+// cron.schedule('*/15 * * * *', () => {
+//     console.log(2);
+//
+//     getUsersList((err, users) => {
+//         if (err) {
+//             console.error(err);
+//         } else {
+//             console.log(3);
+//
+//             users.forEach(user => {
+//                 getUserDetails(user.id, (err, userDetails) => {
+//                     if (err) {
+//                         console.error(err);
+//                     } else {
+//                         generateImage(userDetails)
+//                             .then(message => console.log(message))
+//                             .catch(err => console.error(err));
+//                     }
+//                 });
+//             });
+//         }
+//     });
+// });
 
 
 /**
