@@ -27,7 +27,7 @@ app.get('/logo', (req, res) => {
 });
 
 app.get('/testing', (req, res) => {
-    res.send( <img src="/assets/test.svg" /> );
+    res.send( <img src="/assets/test.svg" alt="" /> );
 });
 
 app.listen(port, () => {
