@@ -26,6 +26,10 @@ app.get('/logo', (req, res) => {
     res.sendFile(path.join(__dirname, 'assets', 'logo.png'));
 });
 
+app.get('/testing', (req, res) => {
+    res.send( <img src="/assets/test.svg" /> );
+});
+
 app.listen(port, () => {
     console.log(`Serwer uruchomiony na porcie ${port}`);
 });
