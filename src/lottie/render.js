@@ -3,16 +3,8 @@ const fs = require('fs');
 
 const renderLottieAnimation = async (lottieAnimation, userUUID, fileName, extension = "gif") => {
 
-    const path1 = `../../public/generated`
-    const path = `../../public/generated/${userUUID}`
-
-    if (!fs.existsSync(path1)){
-        console.log("NIE ISTNIEJE PATH");
-    }
-
-
+    const path = `public/generated/${userUUID}`
     if (!fs.existsSync(path)){
-        console.log("NIE ISTNIEJE");
         fs.mkdirSync(path);
     }
 
