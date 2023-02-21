@@ -5,6 +5,7 @@ const renderLottieAnimation = async (lottieAnimation, userUUID, fileName, extens
 
     const path = `public/generated/${userUUID}`
     if (!fs.existsSync(path)){
+        console.log("NIE ISTNIEJE TAKI")
         fs.mkdirSync(path);
     }
 
