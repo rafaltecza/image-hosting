@@ -26,6 +26,11 @@ app.get('/logo', (req, res) => {
     res.sendFile(path.join(__dirname, 'assets', 'logo.png'));
 });
 
+app.get('/gifo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'assets', 'gifo.gif'));
+});
+
+
 app.get('/testing', (req, res) => {
     res.send('<img src="/assets/test.svg" alt="" />');
 });
