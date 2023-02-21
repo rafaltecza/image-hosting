@@ -5,7 +5,7 @@ const registerRender = (app) => {
     const jsonParser = bodyParser.json();
 
     app.post('/render', jsonParser, async (req, res) => {
-        const avatarAnimation = getAvatarItem("TESTING");
+        const avatarAnimation = getAvatarItem("TESTING2");
         avatarAnimation.then(buffer => res.send(buffer))
             .catch(err => res.send(err))
     })
