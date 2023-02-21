@@ -4,6 +4,9 @@ const renderLottieAnimation = async (lottieAnimation, userUUID, fileName, extens
     return await renderLottie({
         animationData: lottieAnimation,
         output: `public/generated/${userUUID}/${fileName}.${extension}`,
+        puppeteerOptions: {
+            executablePath: 'chromium-browser'
+        }
     })
 }
 
