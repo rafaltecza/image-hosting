@@ -34,7 +34,13 @@ app.get('/gifo', (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-    res.render('template', { name: 'World' });
+    res.render('template',
+        {
+            name: 'Rafał Tęcza',
+            position: 'Frontend Developer',
+            phoneNumber: "+48 987654321",
+            email: "rafal.tecza@daftcode.pl",
+        });
 });
 
 

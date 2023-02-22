@@ -1,0 +1,11 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">@import url('https://fonts.googleapis.com/css?family=DM+Sans</style>
+    </defs>
+
+    <text id="test" fill="black" x="0" y="20" font-size="14px" font-family="DM Sans" font-weight="800">Daftcode</text>
+    <a href="https://www.google.com/maps/place/Warsaw+Spire,+plac+Europejski+1,+00-844+Warszawa/@52.2322617,20.9820807,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecc84baa5393b:0x52f498460abf56dc!8m2!3d52.2322584!4d20.9842694">
+        <text id="test" fill="black" x="0" y="40" font-size="14px" font-family="DM Sans">Plac Europejski 1</text>
+        <text id="test" fill="black" x="0" y="60" font-size="14px" font-family="DM Sans">00-844, Warszawa</text>
+    </a>
+</svg>
