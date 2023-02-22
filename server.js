@@ -18,6 +18,7 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -33,7 +34,7 @@ app.get('/gifo', (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-    res.render('src/views/template', { name: 'World' });
+    res.render('template', { name: 'World' });
 });
 
 
