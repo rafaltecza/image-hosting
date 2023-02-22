@@ -30,6 +30,11 @@ app.get('/gifo', (req, res) => {
     res.sendFile(path.join(__dirname, 'assets', 'gifo.gif'));
 });
 
+app.get('/test', (req, res) => {
+    res.send('<img src="/assets/builder/footer/default_clean.svg" alt="" />');
+
+});
+
 
 app.get('/testing', (req, res) => {
     res.send('<img src="/assets/test.svg" alt="" />');

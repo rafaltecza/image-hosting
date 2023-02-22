@@ -4,18 +4,24 @@
     </defs>
 
     <rect width="1280" height="320" fill="#ffffff" fill-opacity="1"/>
-    <circle cx="160" cy="160" r="120" fill="red" />
-    <text id="test" fill="black" x="318" y="90" font-size="40px" font-family="DM Sans">Imię i nazwisko</text>
-    <text id="test" fill="#0AD560" x="318" y="130" font-size="26px" font-weight="700" font-family="DM Sans">Stanowisko</text>
-    <text id="test" fill="black" x="318" y="210" font-size="20px" font-family="DM Sans">Numer telefonu</text>
-    <text id="test" fill="black" x="318" y="240" font-size="20px" font-family="DM Sans">Adres e-mail</text>
-    <image x="993" y="48" width="50" height="56" href="https://138.3.250.23/public/logo/daftcode_logo_winter.svg"/>
-    <image x="1040" y="60" width="142" height="27" href="https://138.3.250.23/public/logo/daftcode_logo_title.svg"/>
+    <circle cx="125" cy="125" r="80" fill="red" />
+    <text id="test" fill="black" x="238" y="70" font-size="40px" font-family="DM Sans">Imię i nazwisko</text>
+    <text id="test" fill="#0AD560" x="238" y="110" font-size="26px" font-weight="700" font-family="DM Sans">Stanowisko</text>
+    <text id="test" fill="black" x="238" y="169" font-size="20px" font-family="DM Sans">Numer telefonu</text>
+    <text id="test" fill="black" x="238" y="199" font-size="20px" font-family="DM Sans">Adres e-mail</text>
+    <image x="973" y="28" width="50" height="56" href="https://138.3.250.23/public/logo/daftcode_logo_winter.svg"/>
+    <image x="1020" y="40" width="142" height="27" href="https://138.3.250.23/public/logo/daftcode_logo_title.svg"/>
 
-    <text id="test" fill="black" x="1000" y="120" font-size="14px" font-family="DM Sans" font-weight="800">Daftcode</text>
+    <text id="test" fill="black" x="980" y="100" font-size="14px" font-family="DM Sans" font-weight="800">Daftcode</text>
     <a href="https://www.google.com/maps/place/Warsaw+Spire,+plac+Europejski+1,+00-844+Warszawa/@52.2322617,20.9820807,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecc84baa5393b:0x52f498460abf56dc!8m2!3d52.2322584!4d20.9842694">
-        <text id="test" fill="black" x="1000" y="140" font-size="14px" font-family="DM Sans">Plac Europejski 1</text>
-        <text id="test" fill="black" x="1000" y="160" font-size="14px" font-family="DM Sans">00-844, Warszawa</text>
+        <text id="test" fill="black" x="980" y="120" font-size="14px" font-family="DM Sans">Plac Europejski 1</text>
+        <text id="test" fill="black" x="980" y="140" font-size="14px" font-family="DM Sans">00-844, Warszawa</text>
     </a>
+
+    <image x="973" y="160" width="39" height="39" href="https://138.3.250.23/public/social/social_facebook.svg"/>
+    <image x="1022" y="160" width="39" height="39" href="https://138.3.250.23/public/social/social_twitter.svg"/>
+    <image x="1071" y="160" width="39" height="39" href="https://138.3.250.23/public/social/social_linkedin.svg"/>
+    <image x="1120" y="160" width="39" height="39" href="https://138.3.250.23/public/social/social_instagram.svg"/>
+
 
 </svg>
