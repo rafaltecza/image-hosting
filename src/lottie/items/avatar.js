@@ -4,6 +4,7 @@ const lottieAvatarJson = require("../../../assets/lottie/avatar.json");
 /**
  *
  * @param uuid
+ * @param avatarUrl
  * @returns {Promise<*>}
  */
 const getAvatarItem = async (uuid, avatarUrl) => {
