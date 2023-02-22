@@ -17,6 +17,7 @@ const registerRender = (app) => {
 
 
         response.forEach(employee => {
+            console.log(employee);
             const userUUID = employee.id;
 
             const path = `public/generated/${userUUID}`
