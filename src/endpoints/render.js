@@ -24,7 +24,7 @@ const registerRender = (app) => {
             if (!fs.existsSync(path)){
                 fs.mkdirSync(path);
             }
-            const avatarAnimation = getAvatarItem(userUUID, employee?.avatarUrl);
+            // const avatarAnimation = getAvatarItem(userUUID, employee?.avatarUrl);
             const startDate = parseDate(employee?.break?.startDate)
             const endDate = parseDate(employee?.break?.endDate)
 
