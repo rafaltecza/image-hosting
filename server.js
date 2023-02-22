@@ -33,7 +33,7 @@ app.get('/gifo', (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-    res.render('template', { name: 'World' });
+    res.render('src/views/template', { name: 'World' });
 });
 
 
