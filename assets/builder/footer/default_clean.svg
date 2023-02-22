@@ -5,7 +5,7 @@
     <text id="test" fill="black" x="318" y="130" font-size="26px">Stanowisko</text>
     <text id="test" fill="black" x="318" y="210" font-size="20px">Numer telefonu</text>
     <text id="test" fill="black" x="318" y="240" font-size="20px">Adres e-mail</text>
-    <image x="90" y="-65" width="128" height="146" transform="'''rotate(45)'''" href="https://developer.mozilla.org/media/img/mdn-logo.png"/>
+    <image x="993" y="60" width="39" height="44" href="https://138.3.250.23/public/logo/daftcode_logo_winter.svg"/>
 
     <text id="test" fill="black" x="1000" y="120" font-size="14px" font-weight="800">Daftcode</text>
     <text id="test" fill="black" x="1000" y="140" font-size="14px">Plac Europejski 1</text>
