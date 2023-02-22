@@ -18,6 +18,8 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.set('view engine', 'ejs');
+
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/.well-known', express.static(path.join(__dirname, '.well-known')));
@@ -31,8 +33,7 @@ app.get('/gifo', (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-    res.send('<img src="/assets/builder/footer/default_clean.svg" alt="" />');
-
+    res.render('template', { name: 'World' });
 });
 
 
