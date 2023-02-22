@@ -21,10 +21,10 @@ const addTextToSVG = async (
                 elem.children.forEach(child => {
                     if(child.type === "text") {
                         child.value = child.value
-                            .replaceAll('USER', text?.firstName)
-                            .replaceAll('MM', text?.month)
-                            .replaceAll('DD', text?.day)
-                            .replaceAll("RRRR", text?.year);
+                            .replaceAll('USER', text.firstName)
+                            .replaceAll('MM', text.month)
+                            .replaceAll('DD', text.day)
+                            .replaceAll("RRRR", text.year);
                     }
                 })
 
@@ -32,7 +32,7 @@ const addTextToSVG = async (
         })
 
         const svgString = await svgson.stringify(svgObj);
-        const outputPath = path.join(__dirname, `../../../public/generated/${text?.id}`, 'status.svg');
+        const outputPath = path.join(__dirname, `../../../public/generated/${text.id}`, 'status.svg');
         fs.writeFileSync(outputPath, svgString);
 
         // zwróć ścieżkę zapisanego pliku SVG
