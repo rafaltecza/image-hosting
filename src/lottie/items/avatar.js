@@ -6,8 +6,8 @@ const lottieAvatarJson = require("../../../assets/lottie/avatar.json");
  * @param uuid
  * @returns {Promise<*>}
  */
-const getAvatarItem = async (uuid) => {
-    return await renderLottieAnimation(lottieAvatarJson, uuid, "avatar");
+const getAvatarItem = async (uuid, avatarUrl) => {
+    return await renderLottieAnimation(lottieAvatarJson, uuid, avatarUrl, "avatar");
 }
 
 module.exports = getAvatarItem;

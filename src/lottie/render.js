@@ -1,13 +1,9 @@
 const renderLottie = require("puppeteer-lottie");
 const fs = require('fs');
 
-const renderLottieAnimation = async (lottieAnimation, userUUID, fileName, extension = "gif") => {
+const renderLottieAnimation = async (lottieAnimation, userUUID, avatarUrl, fileName, extension = "gif") => {
 
-    const path = `public/generated/${userUUID}`
-    if (!fs.existsSync(path)){
-        console.log("NIE ISTNIEJE TAKI")
-        fs.mkdirSync(path);
-    }
+    lottieAnimation.assets[0].p = fileName;
 
     return await renderLottie({
         animationData: lottieAnimation,

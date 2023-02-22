@@ -1,0 +1,40 @@
+{
+  "message": [
+    {
+      "id": "user_id_1",
+      "userName": "rafal.tecza@daftcode.pl",
+      "avatarUrl": "https://avatar.com/file.png",
+      "birthDate": "1998-08-07T14:15:22Z",
+      "firstName": "Rafał",
+      "lastName": "Tęcza",
+      "break": {
+        "id": "507f1f77bcf86cd799439012",
+        "timesheetId": "507f1f77bcf86cd799439012",
+        "typeId": "type_id_1",
+        "employeeId": "employee_id_1",
+        "status": "APPROVED",
+        "startDate": "2023-02-20T14:15:22Z",
+        "endDate": "2023-02-28T14:15:22Z",
+        "typeName": "BREAK"
+      }
+    },
+    {
+      "id": "user_id_2",
+      "userName": "dominik.gawryszewski@daftcode.pl",
+      "avatarUrl": "https://avatar.com/file.png",
+      "birthDate": "1992-08-07T14:15:22Z",
+      "firstName": "Dominik",
+      "lastName": "Gawryszewski",
+      "break": {
+        "id": "507f1f77bcf86cd799439012",
+        "timesheetId": "507f1f77bcf86cd799439012",
+        "typeId": "type_id_1",
+        "employeeId": "employee_id_2",
+        "status": "APPROVED",
+        "startDate": "2025-03-12T14:15:22Z",
+        "endDate": "2025-08-27T14:15:22Z",
+        "typeName": "BREAK"
+      }
+    }
+  ]
+}

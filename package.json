@@ -21,6 +21,7 @@
     "node-cron": "^3.0.2",
     "puppeteer-lottie": "^1.1.2",
     "request": "^2.88.2",
-    "request-progress": "^3.0.0"
+    "request-progress": "^3.0.0",
+    "svgson": "^5.2.1"
   }
 }

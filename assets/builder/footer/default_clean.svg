@@ -1,0 +1,13 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1280" height="320" fill="#ffffff" fill-opacity="1"/>
+    <circle cx="160" cy="160" r="120" fill="red" />
+    <text id="test" fill="black" x="318" y="90" font-size="40px">Imię i nazwisko</text>
+    <text id="test" fill="black" x="318" y="130" font-size="26px">Stanowisko</text>
+    <text id="test" fill="black" x="318" y="210" font-size="20px">Numer telefonu</text>
+    <text id="test" fill="black" x="318" y="240" font-size="20px">Adres e-mail</text>
+    <image x="90" y="-65" width="128" height="146" transform="'''rotate(45)'''" href="https://developer.mozilla.org/media/img/mdn-logo.png"/>
+
+    <text id="test" fill="black" x="1000" y="120" font-size="14px" font-weight="800">Daftcode</text>
+    <text id="test" fill="black" x="1000" y="140" font-size="14px">Plac Europejski 1</text>
+    <text id="test" fill="black" x="1000" y="160" font-size="14px">00-844, Warszawa</text>
+</svg>
