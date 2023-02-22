@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.set('views', './src/views');
+app.set('views', 'src/views');
 app.set('view engine', 'ejs');
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
