@@ -7,6 +7,7 @@ const Jimp = require('jimp');
 const async = require('async');
 const cron = require('node-cron');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const registerRender = require("./src/endpoints/render");
 dotenv.config();
 
@@ -21,7 +22,7 @@ app.use(function(req, res, next) {
 app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs');
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/public', cors(), express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/.well-known', express.static(path.join(__dirname, '.well-known')));
 
