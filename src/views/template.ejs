@@ -27,35 +27,14 @@
             font-family: "DM Sans", serif;
         }
 
-        table td:first-child {
-            padding:0 300px 0 0; /* Only right padding*/
-        }
-
-        .text-wrap {
-            width: 55%;
-        }
 
     </style>
 </head>
 <body>
 
-<table>
-    <tr>
-        <td style="@font-face {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }font-size: 40px; font-family: 'DM Sans', serif;"><%= name %></td>
+<table style="font-family: Tahoma, Verdana, serif; font-size: 20px;">
+    <tr style="">
+        <td style="font-size: 40px; padding:0 300px 0 0;"><%= name %></td>
         <td>
             <div style="display: flex; align-items: center;">
                 <img width="50" height="56" src="https://138.3.250.23/public/logo/daftcode_logo_winter.svg" alt=""/>
@@ -64,21 +43,30 @@
         </td>
     </tr>
     <tr>
-        <td style="font-size: 26px; font-family: 'DM Sans', serif"><%= position %></td>
-        <td style="font-size: 20px; font-family: 'DM Sans', serif">Daftcode</td>
+        <td style="font-size: 26px; color: #0AD560; font-weight: 500"><%= position %></td>
     </tr>
-    <tr>
-        <td class="text-medium"><%= phoneNumber %></td>
-        <td class="text-small">
-            <div class="text-wrap">
-                Plac Europejski 1 00-844, Warszawa
+    <tr style="position: relative; top: 25px; vertical-align: bottom;">
+        <td>
+            <%= phoneNumber %>
+            <br>
+            <%= email %>
+        </td>
+        <td style="width: 194px;">
+            <div style="font-size: 14px; text-decoration: underline; margin-bottom: 10px; text-align: right;">
+                Plac Europejski 1
+                <br>
+                00-844, Warszawa
+            </div>
+            <div style="display: flex; justify-content: right; position: relative;">
+                <div style="gap: 20px">
+                    <img width="35" height="35" src="https://138.3.250.23/public/social/social_facebook.svg" alt=""/>
+                    <img width="35" height="35" src="https://138.3.250.23/public/social/social_instagram.svg" alt=""/>
+                    <img width="35" height="35" src="https://138.3.250.23/public/social/social_linkedin.svg" alt=""/>
+                    <img width="35" height="35" src="https://138.3.250.23/public/social/social_twitter.svg" alt=""/>
+                </div>
+
             </div>
         </td>
-
-    </tr>
-    <tr>
-        <td class="text-medium"><%= email %></td>
-
     </tr>
 </table>
 
