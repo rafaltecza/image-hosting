@@ -26,8 +26,8 @@ app.use('/public', cors(), express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/.well-known', express.static(path.join(__dirname, '.well-known')));
 
-app.get('/logo', (req, res) => {
-    res.sendFile(path.join(__dirname, 'assets', 'logo.png'));
+app.get('/daftcode-logo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/logo', 'daftcode_logo_winter.png'));
 });
 
 app.get('/gifo', (req, res) => {
